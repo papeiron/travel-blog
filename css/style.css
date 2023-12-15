@@ -628,6 +628,18 @@ adress {
   gap: 4rem;
 }
 
+@media screen and (max-width: 950px) {
+  #header .header-top .container .nav .nav-links {
+    flex-wrap: wrap;
+  }
+  .nav-links .header-logo {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    order: -1;
+  }
+}
+
 #header .header-top .container .nav .nav-links .nav-item {
   cursor: pointer;
   display: flex;
@@ -804,6 +816,16 @@ adress {
   padding: 3rem;
 }
 
+@media screen and (max-width: 950px) {
+  #main .greeting-section .container {
+    flex-direction: column;
+    text-align: center;
+  }
+  #main .greeting-section .greeting-text {
+    margin-top: 5rem;
+  }
+}
+
 #main .greeting-section .greeting-text {
   flex: 1;
   align-self: center;
@@ -949,6 +971,15 @@ adress {
 .world-map-section .container {
   display: flex;
   gap: 5rem;
+}
+
+@media screen and (max-width: 950px) {
+  .world-map-section .container {
+    flex-direction: column;
+  }
+  .world-map-section .world-map-section__title {
+    order: -1;
+  }
 }
 
 .world-map-section .world-map-section__title {
